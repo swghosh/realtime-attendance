@@ -1,0 +1,8 @@
+.ipynb_*/
+data/
+testimages/
+train/
+test/
+__pycache__/
+.vscode/
+*.pickle
