@@ -17,8 +17,8 @@ def export_attendance():
     sio = io.StringIO()
     writer = csv.DictWriter(sio, fieldnames=['name', 'phone'])
     writer.writeheader()
-    writer.writerow({'name': 'Swarup Ghosh', 'phone': 891517827})
-    writer.writerow({'name': 'Naman Sharma', 'phone': 891517828})
+    writer.writerow({'name': 'Sample Name A', 'phone': 10020304})
+    writer.writerow({'name': 'Sample Name B', 'phone': 10020305})
     return sio.getvalue()
 
 if __name__ == '__main__':
