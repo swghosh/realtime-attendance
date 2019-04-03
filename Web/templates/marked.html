@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Realtime Attendance</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'main.css') }}" />
+    </head>
+    <body>
+        <h1>Realtime Attendance</h1>
+        <nav>
+            <ul>
+                <a href="{{ url_for('index') }}"><li class="active">Mark Attendance</li></a>
+                <a href="{{ url_for('export_attendance') }}"><li>Export as Spreadsheet</li></a>
+                <a href="{{ url_for('list_students') }}"><li>List of Students</li></a>
+            </ul>
+        </nav>
+        <div class="content">
+            <img src="{{ url_for('static', filename = 'logo.png') }}"><br><br>
+            Attendance has been marked for:<br><br>
+            <ul>
+                {% for student in students %}
+                <li>{{ student }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </body>
+</html>

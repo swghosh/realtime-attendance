@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+    font-family: 'Open Sans';
+    transition: all 0.5s ease-in-out;
+}
+body {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0;
+}
+nav {
+    text-align: center;
+    background-color: #ddd;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 6px gray;
+}
+nav ul a {
+    color: #333;
+    text-decoration: none;
+}
+nav ul li {
+    display: inline-block;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    width: 20%;
+    margin: 0;
+    font-size: 0.8em;
+}
+nav ul li:hover {
+    background-color: #eee;
+}
+div.content {
+    padding-top: 5%;
+    padding-bottom: 3%;
+    font-size: 0.8em;
+}
+form {
+    margin-left: 5em;
+    margin-right: 5em;
+    border-radius: 1.2em;
+    border: 2px dashed gray;
+    background-image: url(image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+input[type=file] {
+    font-family: 'Open Sans';
+    width: 100%;
+    height: 175px;
+    display: block;
+    opacity: 0;
+}
+button[type=submit] {
+    background-color: #777;
+    color: #fff;
+    border: none;
+    padding-left: 0.9em;
+    padding-right: 0.9em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    font-size: 1.1em;
+    border: 1px solid #777;
+    border-radius: 0.2em;
+    margin: 2em;
+    box-shadow: 0 0 2px rgb(177, 177, 177);
+}
+button[type=submit]:hover {
+    background-color: #222;
+}
+div.image {
+    font-size: 0.8em;
+    padding: 1em;
+}
+img.uploaded {
+    width: 350px;
+    padding: 1em;
+    border: 1px dashed #222;
+}
+img.disabled {
+    width: 0;
+    opacity: 0;
+}
+@media only screen and (max-width : 1000px) {
+    nav ul li {
+        width: 90%;
+    }
+}

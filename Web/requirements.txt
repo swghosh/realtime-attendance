@@ -1,3 +1,5 @@
 flask
 cv2
 google-cloud-storage
+numpy
+pickle
