@@ -1,0 +1,7 @@
+numpy
+scikit-learn
+opencv-contrib-python
+Flask
+tqdm
+scikit-plot
+google-cloud-storage

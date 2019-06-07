@@ -1,6 +1,11 @@
+# Required packages:
+
+# numpy, opencv-contrib-python, matplotlib
+# dependencies can be installed using
+# $ pip install -r requirements.txt
+
 import numpy as np
 import cv2
-import pywt
 import glob
 import os
 from matplotlib import pyplot as plt
