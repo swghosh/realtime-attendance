@@ -1,11 +1,6 @@
-# Required packages:
-
-# numpy, opencv-contrib-python, matplotlib
-# dependencies can be installed using
-# $ pip install -r requirements.txt
-
 import numpy as np
 import cv2
+import pywt
 import glob
 import os
 from matplotlib import pyplot as plt
@@ -29,7 +24,7 @@ def load_dataset(path = '.', preprocess = None, gray = False):
     # list of image paths
     selected_images = {}
     for class_label in class_labels:
-        glob_selector = os.path.join(path, class_label, "*.p*") # select png and ppm
+        glob_selector = os.path.join(path, class_label, "*.*p*") # select png, ppm, jpg
         image_paths = glob.glob(glob_selector)
         print('%d images available for "%s"' % (len(image_paths), class_label))
         selected_images[class_label] = image_paths
